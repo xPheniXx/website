@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}PheniX's Test Site{% endblock %}</title>
+</head>
+<body>
+<header>
+    <p>PheniX's Test Place</p>
+<nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="{% url 'home-about' %}">About</a></li>
+
+    </ul>
+</nav>
+</header>
+
+{% block main %}
+<section></section>
+<section></section>
+<aside></aside>
+{% endblock %}
+
+<footer></footer>
+</body>
+</html>
